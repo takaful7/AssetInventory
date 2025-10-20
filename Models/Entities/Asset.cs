@@ -1,4 +1,5 @@
 ﻿using AssetInventory.Models.Base;
+using AssetInventory.Models.Histories;
 
 namespace AssetInventory.Models.Entities
 {
@@ -35,5 +36,13 @@ namespace AssetInventory.Models.Entities
         public long? UserId { get; set; }
 
         public User User { get; set; }
+
+        public ICollection<AssetAssignmentHistory> AssignmentHistories { get; set; } = new List<AssetAssignmentHistory>();
+
+        public ICollection<AssetLocationHistory> LocationHistories { get; set; } = new List<AssetLocationHistory>();
+
+        public ICollection<AssetConditionHistory> ConditionHistories { get; set; } = new List<AssetConditionHistory>();
+
+        public ICollection<AssetStatusHistory> StatusHistories { get; set; } = new List<AssetStatusHistory>();
     }
 }

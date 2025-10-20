@@ -11,5 +11,7 @@ namespace AssetInventory.Models.Entities
         public string Brand { get; set; }
 
         public string Model { get; set; }
+
+        public ICollection<Asset> Assets { get; set; } = new List<Asset>();
     }
 }

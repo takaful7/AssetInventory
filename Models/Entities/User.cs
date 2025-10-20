@@ -13,5 +13,8 @@ namespace AssetInventory.Models.Entities
         public long CompanyId { get; set; }
 
         public Company Company { get; set; }
+
+        public ICollection<Asset> Assets { get; set; } = new List<Asset>();
+
     }
 }
