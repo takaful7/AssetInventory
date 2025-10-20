@@ -1,4 +1,4 @@
-namespace AssetInventory.Models;
+namespace AssetInventory.Models.Entities;
 
 public class ErrorViewModel
 {
