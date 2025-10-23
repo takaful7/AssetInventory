@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using AssetInventory.Models;
+using AssetInventory.Models.Entities;
 
 namespace AssetInventory.Controllers;
 
